@@ -20,6 +20,7 @@ RCT_EXPORT_MODULE(RNTNative);
 
 - (UIView *)view {
    RNEditView *view = [[RNEditView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+   view.backgroundColor = [UIColor redColor];
    return view;
 }
 
