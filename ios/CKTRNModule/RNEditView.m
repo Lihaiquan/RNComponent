@@ -7,6 +7,10 @@
 //
 
 #import "RNEditView.h"
+#import <CKTVideoEditSDK/CKTVideoEditSDK.h>
+#import <CKTVideoEditSDK/CKTWrapViewController.h>
+#import  <CKTVideoEditSDK/CKTVideoEditViewController.h>
+#import  <CKTVideoEditSDK/CKTBaseViewController.h>
 
 @interface RNEditView ()
 @property (nonatomic) UINavigationController *navigation;
@@ -17,6 +21,20 @@
 - (dispatch_queue_t)methodQueue {
     return dispatch_get_main_queue();
 }
+
+    
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        CKTVideoEditViewController *ckt = [[CKTVideoEditViewController alloc] init];
+        CKTWrapViewController *wrap = [CKTWrapViewController wrapControllerWithController:ckt];
+        _navigation = [[UINavigationController alloc] initWithRootViewController:wrap];
+        _navigation.navigationBar.hidden = YES;
+        [self addSubview:_navigation.view];
+    }
+    return self;
+}
+
 
 - (void)setVideoUrl:(NSString *)videoUrl {
   _videoUrl = videoUrl;
