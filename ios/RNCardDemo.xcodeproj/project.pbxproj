@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE15D3C6221E646D00A07AA2 /* RNEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C2221E646D00A07AA2 /* RNEditView.m */; };
 		CE15D3C7221E646D00A07AA2 /* RNTNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */; };
-		CE649736221FC0DA00C73865 /* CKTVideoEditSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */; };
+		CE649922221FDDAC00C73865 /* libCKTVideoEditLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE649921221FDDAC00C73865 /* libCKTVideoEditLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,12 @@
 		CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTNativeManager.m; sourceTree = "<group>"; };
 		CE15D3C4221E646D00A07AA2 /* RNEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEditView.h; sourceTree = "<group>"; };
 		CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTNativeManager.h; sourceTree = "<group>"; };
-		CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CKTVideoEditSDK.framework; sourceTree = "<group>"; };
+		CE649921221FDDAC00C73865 /* libCKTVideoEditLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCKTVideoEditLib.a; sourceTree = "<group>"; };
+		CE649923221FDDE900C73865 /* CKTVideoEdit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CKTVideoEdit.bundle; path = CKTVideoEditSDK.framework/CKTVideoEdit.bundle; sourceTree = "<group>"; };
+		CE649924221FDDF300C73865 /* CKTVideoEditSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKTVideoEditSDK.h; path = CKTVideoEditSDK.framework/Headers/CKTVideoEditSDK.h; sourceTree = "<group>"; };
+		CE649925221FDDF300C73865 /* CKTVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKTVideoEditViewController.h; path = CKTVideoEditSDK.framework/Headers/CKTVideoEditViewController.h; sourceTree = "<group>"; };
+		CE649926221FDDF300C73865 /* CKTWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKTWrapViewController.h; path = CKTVideoEditSDK.framework/Headers/CKTWrapViewController.h; sourceTree = "<group>"; };
+		CE649927221FDDF300C73865 /* CKTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKTBaseViewController.h; path = CKTVideoEditSDK.framework/Headers/CKTBaseViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE649736221FC0DA00C73865 /* CKTVideoEditSDK.framework in Frameworks */,
+				CE649922221FDDAC00C73865 /* libCKTVideoEditLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +69,12 @@
 		CE15D3C1221E646D00A07AA2 /* CKTRNModule */ = {
 			isa = PBXGroup;
 			children = (
-				CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */,
+				CE649927221FDDF300C73865 /* CKTBaseViewController.h */,
+				CE649924221FDDF300C73865 /* CKTVideoEditSDK.h */,
+				CE649925221FDDF300C73865 /* CKTVideoEditViewController.h */,
+				CE649926221FDDF300C73865 /* CKTWrapViewController.h */,
+				CE649923221FDDE900C73865 /* CKTVideoEdit.bundle */,
+				CE649921221FDDAC00C73865 /* libCKTVideoEditLib.a */,
 				CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */,
 				CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */,
 				CE15D3C4221E646D00A07AA2 /* RNEditView.h */,
@@ -227,7 +237,10 @@
 					"$(PROJECT_DIR)/CKTRNModule",
 				);
 				HEADER_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CKTRNModule",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNCardDemo;
 				SKIP_INSTALL = YES;
@@ -243,7 +256,10 @@
 					"$(PROJECT_DIR)/CKTRNModule",
 				);
 				HEADER_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CKTRNModule",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNCardDemo;
 				SKIP_INSTALL = YES;

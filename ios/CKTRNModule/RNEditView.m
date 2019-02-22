@@ -7,10 +7,9 @@
 //
 
 #import "RNEditView.h"
-#import <CKTVideoEditSDK/CKTVideoEditSDK.h>
-#import <CKTVideoEditSDK/CKTWrapViewController.h>
-#import  <CKTVideoEditSDK/CKTVideoEditViewController.h>
-#import  <CKTVideoEditSDK/CKTBaseViewController.h>
+#import "CKTWrapViewController.h"
+#import  "CKTVideoEditViewController.h"
+#import  "CKTBaseViewController.h"
 
 @interface RNEditView ()
 @property (nonatomic) UINavigationController *navigation;
