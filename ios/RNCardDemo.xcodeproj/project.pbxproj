@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9EC5300BE88B9FDB68632ADE /* libPods-RNCardDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4045F4F5F6773E0C933235 /* libPods-RNCardDemo.a */; };
 		CE15D3C6221E646D00A07AA2 /* RNEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C2221E646D00A07AA2 /* RNEditView.m */; };
 		CE15D3C7221E646D00A07AA2 /* RNTNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */; };
 		CE649736221FC0DA00C73865 /* CKTVideoEditSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */; };
@@ -27,14 +26,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNCardDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCardDemo.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C4045F4F5F6773E0C933235 /* libPods-RNCardDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNCardDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE15D3C2221E646D00A07AA2 /* RNEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEditView.m; sourceTree = "<group>"; };
 		CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTNativeManager.m; sourceTree = "<group>"; };
 		CE15D3C4221E646D00A07AA2 /* RNEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEditView.h; sourceTree = "<group>"; };
 		CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTNativeManager.h; sourceTree = "<group>"; };
 		CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CKTVideoEditSDK.framework; sourceTree = "<group>"; };
-		EEA5622EC4B64B3151B8E428 /* Pods-RNCardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCardDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNCardDemo/Pods-RNCardDemo.release.xcconfig"; sourceTree = "<group>"; };
-		FE64509A50007B88442BE6ED /* Pods-RNCardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCardDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNCardDemo/Pods-RNCardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,22 +39,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE649736221FC0DA00C73865 /* CKTVideoEditSDK.framework in Frameworks */,
-				9EC5300BE88B9FDB68632ADE /* libPods-RNCardDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		022DA7DA7501D08A2DB90049 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE64509A50007B88442BE6ED /* Pods-RNCardDemo.debug.xcconfig */,
-				EEA5622EC4B64B3151B8E428 /* Pods-RNCardDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,17 +58,7 @@
 			children = (
 				CE15D3C1221E646D00A07AA2 /* CKTRNModule */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				022DA7DA7501D08A2DB90049 /* Pods */,
-				6811E86869797A911EB2E4A2 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		6811E86869797A911EB2E4A2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9C4045F4F5F6773E0C933235 /* libPods-RNCardDemo.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE15D3C1221E646D00A07AA2 /* CKTRNModule */ = {
@@ -104,7 +80,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNCardDemo" */;
 			buildPhases = (
-				526B21F506182CD27527F772 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -148,31 +123,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		526B21F506182CD27527F772 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNCardDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -270,7 +220,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE64509A50007B88442BE6ED /* Pods-RNCardDemo.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,7 +236,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEA5622EC4B64B3151B8E428 /* Pods-RNCardDemo.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
