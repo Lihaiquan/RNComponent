@@ -10,7 +10,7 @@
 		9EC5300BE88B9FDB68632ADE /* libPods-RNCardDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4045F4F5F6773E0C933235 /* libPods-RNCardDemo.a */; };
 		CE15D3C6221E646D00A07AA2 /* RNEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C2221E646D00A07AA2 /* RNEditView.m */; };
 		CE15D3C7221E646D00A07AA2 /* RNTNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */; };
-		CE6496E9221FB85D00C73865 /* CKTVideoEditSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6496E8221FB85D00C73865 /* CKTVideoEditSDK.framework */; };
+		CE649736221FC0DA00C73865 /* CKTVideoEditSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,7 @@
 		CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTNativeManager.m; sourceTree = "<group>"; };
 		CE15D3C4221E646D00A07AA2 /* RNEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEditView.h; sourceTree = "<group>"; };
 		CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTNativeManager.h; sourceTree = "<group>"; };
-		CE6496E8221FB85D00C73865 /* CKTVideoEditSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CKTVideoEditSDK.framework; sourceTree = "<group>"; };
+		CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CKTVideoEditSDK.framework; sourceTree = "<group>"; };
 		EEA5622EC4B64B3151B8E428 /* Pods-RNCardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCardDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNCardDemo/Pods-RNCardDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE64509A50007B88442BE6ED /* Pods-RNCardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCardDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNCardDemo/Pods-RNCardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6496E9221FB85D00C73865 /* CKTVideoEditSDK.framework in Frameworks */,
+				CE649736221FC0DA00C73865 /* CKTVideoEditSDK.framework in Frameworks */,
 				9EC5300BE88B9FDB68632ADE /* libPods-RNCardDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +70,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				CE6496E8221FB85D00C73865 /* CKTVideoEditSDK.framework */,
 				CE15D3C1221E646D00A07AA2 /* CKTRNModule */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				022DA7DA7501D08A2DB90049 /* Pods */,
@@ -89,6 +88,7 @@
 		CE15D3C1221E646D00A07AA2 /* CKTRNModule */ = {
 			isa = PBXGroup;
 			children = (
+				CE649735221FC0DA00C73865 /* CKTVideoEditSDK.framework */,
 				CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */,
 				CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */,
 				CE15D3C4221E646D00A07AA2 /* RNEditView.h */,
@@ -275,6 +275,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CKTRNModule",
 				);
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -291,6 +292,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CKTRNModule",
 				);
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
