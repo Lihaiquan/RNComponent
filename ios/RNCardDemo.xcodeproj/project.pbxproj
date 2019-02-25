@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE124F4F22237C36004F18BF /* libCKTVideoEditLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE124F4E22237C36004F18BF /* libCKTVideoEditLib.a */; };
+		CE124F7F22238605004F18BF /* libCKTVideoEditLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE124F7E22238605004F18BF /* libCKTVideoEditLib.a */; };
 		CE15D3C6221E646D00A07AA2 /* RNEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C2221E646D00A07AA2 /* RNEditView.m */; };
 		CE15D3C7221E646D00A07AA2 /* RNTNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		CE124F4B22237C2D004F18BF /* CKTVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTVideoEditViewController.h; sourceTree = "<group>"; };
 		CE124F4C22237C2D004F18BF /* CKTWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTWrapViewController.h; sourceTree = "<group>"; };
 		CE124F4D22237C2D004F18BF /* CKTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTBaseViewController.h; sourceTree = "<group>"; };
-		CE124F4E22237C36004F18BF /* libCKTVideoEditLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCKTVideoEditLib.a; sourceTree = "<group>"; };
+		CE124F7E22238605004F18BF /* libCKTVideoEditLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCKTVideoEditLib.a; sourceTree = "<group>"; };
 		CE15D3C2221E646D00A07AA2 /* RNEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEditView.m; sourceTree = "<group>"; };
 		CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTNativeManager.m; sourceTree = "<group>"; };
 		CE15D3C4221E646D00A07AA2 /* RNEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEditView.h; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE124F4F22237C36004F18BF /* libCKTVideoEditLib.a in Frameworks */,
+				CE124F7F22238605004F18BF /* libCKTVideoEditLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		CE15D3C1221E646D00A07AA2 /* CKTRNModule */ = {
 			isa = PBXGroup;
 			children = (
-				CE124F4E22237C36004F18BF /* libCKTVideoEditLib.a */,
+				CE124F7E22238605004F18BF /* libCKTVideoEditLib.a */,
 				CE124F4D22237C2D004F18BF /* CKTBaseViewController.h */,
 				CE124F4B22237C2D004F18BF /* CKTVideoEditViewController.h */,
 				CE124F4C22237C2D004F18BF /* CKTWrapViewController.h */,
