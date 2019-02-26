@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "RNEditView.h"
 
+
 @interface RNTNativeManager () <CKTVideoEditViewControllerDelegate>
 @end
 
@@ -26,8 +27,8 @@ RCT_EXPORT_MODULE(RNTNative);
 }
 
 - (void)backButtonDidClickedAction {
-    
-    NSLog(@"++++++");
+    [self.bridge enqueueJSCall:@"RCTDeviceEventEmitter" method:@"emit" args:@[@"EventBack",@"{}"] completion:NULL];
+
 }
 
 
