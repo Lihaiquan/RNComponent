@@ -11,7 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "RNEditView.h"
 
-@interface RNTNativeManager ()
+@interface RNTNativeManager () <CKTVideoEditViewControllerDelegate>
 @end
 
 @implementation RNTNativeManager
@@ -19,10 +19,17 @@
 RCT_EXPORT_MODULE(RNTNative);
 
 - (UIView *)view {
-   RNEditView *view = [[RNEditView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-   view.backgroundColor = [UIColor redColor];
-   return view;
+    RNEditView *view = [[RNEditView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    view.backgroundColor = [UIColor redColor];
+    view.cktViewController.delegate = self;
+    return view;
 }
+
+- (void)backButtonDidClickedAction {
+    
+    NSLog(@"++++++");
+}
+
 
 RCT_EXPORT_VIEW_PROPERTY(videoUrl, NSString)
 

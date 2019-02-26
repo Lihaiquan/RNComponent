@@ -8,7 +8,6 @@
 
 #import "RNEditView.h"
 #import "CKTWrapViewController.h"
-#import  "CKTVideoEditViewController.h"
 #import  "CKTBaseViewController.h"
 
 @interface RNEditView ()
@@ -25,8 +24,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        CKTVideoEditViewController *ckt = [[CKTVideoEditViewController alloc] init];
-        CKTWrapViewController *wrap = [CKTWrapViewController wrapControllerWithController:ckt];
+        _cktViewController = [[CKTVideoEditViewController alloc] init];
+        CKTWrapViewController *wrap = [CKTWrapViewController wrapControllerWithController:_cktViewController];
         _navigation = [[UINavigationController alloc] initWithRootViewController:wrap];
         _navigation.navigationBar.hidden = YES;
         [self addSubview:_navigation.view];

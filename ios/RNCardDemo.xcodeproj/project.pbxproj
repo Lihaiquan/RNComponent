@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE124F7F22238605004F18BF /* libCKTVideoEditLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE124F7E22238605004F18BF /* libCKTVideoEditLib.a */; };
 		CE15D3C6221E646D00A07AA2 /* RNEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C2221E646D00A07AA2 /* RNEditView.m */; };
 		CE15D3C7221E646D00A07AA2 /* RNTNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */; };
+		CE85FFE02224DD8200098897 /* libCKTVideoEditLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE85FFDF2224DD8200098897 /* libCKTVideoEditLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +26,14 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNCardDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCardDemo.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE124F4B22237C2D004F18BF /* CKTVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTVideoEditViewController.h; sourceTree = "<group>"; };
 		CE124F4C22237C2D004F18BF /* CKTWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTWrapViewController.h; sourceTree = "<group>"; };
 		CE124F4D22237C2D004F18BF /* CKTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTBaseViewController.h; sourceTree = "<group>"; };
-		CE124F7E22238605004F18BF /* libCKTVideoEditLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCKTVideoEditLib.a; sourceTree = "<group>"; };
 		CE15D3C2221E646D00A07AA2 /* RNEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEditView.m; sourceTree = "<group>"; };
 		CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTNativeManager.m; sourceTree = "<group>"; };
 		CE15D3C4221E646D00A07AA2 /* RNEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEditView.h; sourceTree = "<group>"; };
 		CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTNativeManager.h; sourceTree = "<group>"; };
-		CE649923221FDDE900C73865 /* CKTVideoEdit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CKTVideoEdit.bundle; path = CKTVideoEditSDK.framework/CKTVideoEdit.bundle; sourceTree = "<group>"; };
+		CE85FFDE2224DD5E00098897 /* CKTVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTVideoEditViewController.h; sourceTree = "<group>"; };
+		CE85FFDF2224DD8200098897 /* libCKTVideoEditLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCKTVideoEditLib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE124F7F22238605004F18BF /* libCKTVideoEditLib.a in Frameworks */,
+				CE85FFE02224DD8200098897 /* libCKTVideoEditLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,11 +67,10 @@
 		CE15D3C1221E646D00A07AA2 /* CKTRNModule */ = {
 			isa = PBXGroup;
 			children = (
-				CE124F7E22238605004F18BF /* libCKTVideoEditLib.a */,
+				CE85FFDF2224DD8200098897 /* libCKTVideoEditLib.a */,
+				CE85FFDE2224DD5E00098897 /* CKTVideoEditViewController.h */,
 				CE124F4D22237C2D004F18BF /* CKTBaseViewController.h */,
-				CE124F4B22237C2D004F18BF /* CKTVideoEditViewController.h */,
 				CE124F4C22237C2D004F18BF /* CKTWrapViewController.h */,
-				CE649923221FDDE900C73865 /* CKTVideoEdit.bundle */,
 				CE15D3C5221E646D00A07AA2 /* RNTNativeManager.h */,
 				CE15D3C3221E646D00A07AA2 /* RNTNativeManager.m */,
 				CE15D3C4221E646D00A07AA2 /* RNEditView.h */,

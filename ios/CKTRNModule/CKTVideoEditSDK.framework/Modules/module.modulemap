@@ -1,6 +1,0 @@
-framework module CKTVideoEditSDK {
-  umbrella header "CKTVideoEditSDK.h"
-
-  export *
-  module * { export * }
-}
